@@ -1,0 +1,66 @@
+<mat-stepper [linear]="true" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>Please fill in your email and password</ng-template>
+    <form class="mt-16" [formGroup]="firstFormGroup">
+      <div>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="email@example.com" formControlName="email" required>
+          <mat-error *ngIf="email?.invalid">{{getEmailErrors()}}</mat-error>
+        </mat-form-field>
+      </div>
+    </form>
+    <form [formGroup]="passwordsFormGroup">
+      <div class="mt-16">
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="******" formControlName="password" required>
+          <mat-error *ngIf="password?.invalid">{{getPasswordErrors()}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="mt-16">
+        <mat-form-field>
+          <mat-label>Confirm password</mat-label>
+          <input matInput type="password" placeholder="******" formControlName="confirmPassword" required>
+          <mat-error *ngIf="confirmPassword?.invalid">{{getConfirmPasswordErrors()}}</mat-error>
+        </mat-form-field>
+      </div>
+    </form>
+
+    <mat-checkbox [(ngModel)]="isAgree">Do you agree?</mat-checkbox>
+
+    <div class="mt-16">
+      <button [disabled]="!canProceed()" mat-button matStepperNext color="primary">Go to step 2</button>
+    </div>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" label="Where are you from?">
+    <form class="mt-16" [formGroup]="secondFormGroup" (submit)="onSubmit()">
+      <div>
+        <mat-form-field>
+          <mat-label>Country</mat-label>
+          <mat-select formControlName="countryId">
+            <mat-option *ngFor="let country of countries" [value]="country.countryId">
+              {{country.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Province</mat-label>
+          <mat-select formControlName="provinceId">
+            <mat-option *ngFor="let province of provinces" [value]="province.provinceId">
+              {{province.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-button matStepperPrevious color="primary">Back</button>
+        <button mat-flat-button type="submit" color="primary">Register</button>
+      </div>
+    </form>
+  </mat-step>
+</mat-stepper>

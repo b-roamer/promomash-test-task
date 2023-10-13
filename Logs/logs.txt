@@ -1,0 +1,2170 @@
+[2023-10-12 21:25:31.591] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 21:51:02.815] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 21:51:09.501] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger" responded 301 in 49.9185 ms
+ 
+
+
+[2023-10-12 21:51:09.825] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 269.2181 ms
+ 
+
+
+[2023-10-12 21:51:10.132] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 32.7253 ms
+ 
+
+
+[2023-10-12 21:51:10.137] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 38.5938 ms
+ 
+
+
+[2023-10-12 21:51:10.138] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 2.6190 ms
+ 
+
+
+[2023-10-12 21:51:10.596] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 120.3923 ms
+ 
+
+
+[2023-10-12 21:51:10.726] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 346.2915 ms
+ 
+
+
+[2023-10-12 21:51:24.379] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 7.2480 ms
+ 
+
+
+[2023-10-12 21:51:24.425] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 6.8921 ms
+ 
+
+
+[2023-10-12 21:53:21.545] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 21:54:05.512] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 21:54:07.790] [Error] RBs-MacBook-Pro () <Microsoft.EntityFrameworkCore.Database.Command> Failed executing DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Users] (
+    [UserId] uniqueidentifier NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [CountryId] uniqueidentifier NOT NULL,
+    [ProvinceId] uniqueidentifier NOT NULL,
+    [PasswordHash] nvarchar(max) NOT NULL,
+    [PasswordSalt] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([UserId]),
+    CONSTRAINT [FK_Users_Countries_CountryId] FOREIGN KEY ([CountryId]) REFERENCES [Countries] ([CountryId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Users_Provinces_ProvinceId] FOREIGN KEY ([ProvinceId]) REFERENCES [Provinces] ([ProvinceId]) ON DELETE CASCADE
+);"
+ 
+
+
+[2023-10-12 21:56:48.258] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 21:57:15.374] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 22:27:50.988] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 22:28:09.875] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 22:28:16.525] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 323.0190 ms
+ 
+
+
+[2023-10-12 22:28:16.627] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 32.4275 ms
+ 
+
+
+[2023-10-12 22:28:46.754] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 22:29:11.904] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 312.6558 ms
+ 
+
+
+[2023-10-12 22:29:11.987] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 34.4813 ms
+ 
+
+
+[2023-10-12 23:35:53.498] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 23:35:54.041] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-12 23:35:55.917] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-12 23:36:04.235] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 334.8421 ms
+ 
+
+
+[2023-10-12 23:36:04.452] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 128.7769 ms
+ 
+
+
+[2023-10-12 23:36:13.214] [Error] RBs-MacBook-Pro () <Microsoft.EntityFrameworkCore.Database.Command> Failed executing DbCommand ("133"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CountryId], [c].[CreatedDate], [c].[Name], [c].[UpdatedDate]
+FROM [Countries] AS [c]"
+ 
+
+
+[2023-10-12 23:36:13.263] [Error] RBs-MacBook-Pro () <Microsoft.EntityFrameworkCore.Query> An exception occurred while iterating over the results of a query for context type '"Infrastructure.DatabaseContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'UpdatedDate'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c1eaf711-0302-4da9-abfa-c89d64a2e3e1
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'UpdatedDate'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c1eaf711-0302-4da9-abfa-c89d64a2e3e1
+Error Number:207,State:1,Class:16
+ 
+
+
+[2023-10-12 23:36:13.396] [Error] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 500 in 813.9088 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'UpdatedDate'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Infrastructure.Repositories.CountryRepository.GetAll() in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/CountryRepository.cs:line 35
+   at WebAPI.Controllers.CountriesController.Get() in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/CountriesController.cs:line 26
+   at lambda_method37(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:c1eaf711-0302-4da9-abfa-c89d64a2e3e1
+Error Number:207,State:1,Class:16
+ 
+
+
+[2023-10-12 23:36:13.435] [Error] RBs-MacBook-Pro () <Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware> An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'UpdatedDate'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Infrastructure.Repositories.CountryRepository.GetAll() in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/CountryRepository.cs:line 35
+   at WebAPI.Controllers.CountriesController.Get() in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/CountriesController.cs:line 26
+   at lambda_method37(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c1eaf711-0302-4da9-abfa-c89d64a2e3e1
+Error Number:207,State:1,Class:16
+ 
+
+
+[2023-10-12 23:37:09.887] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 23:37:26.353] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 23:37:26.940] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-12 23:37:29.037] [Error] RBs-MacBook-Pro () <Microsoft.EntityFrameworkCore.Database.Command> Failed executing DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Countries] (
+    [CountryId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Countries] PRIMARY KEY ([CountryId])
+);"
+ 
+
+
+[2023-10-12 23:38:15.221] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 23:38:15.759] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-12 23:38:18.311] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-12 23:38:23.427] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 288.6140 ms
+ 
+
+
+[2023-10-12 23:38:23.674] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 132.0192 ms
+ 
+
+
+[2023-10-12 23:38:27.946] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 722.9413 ms
+ 
+
+
+[2023-10-12 23:40:29.878] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 23:40:30.388] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-12 23:40:32.252] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-12 23:40:34.083] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 335.5789 ms
+ 
+
+
+[2023-10-12 23:40:34.261] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 129.5870 ms
+ 
+
+
+[2023-10-12 23:40:38.495] [Error] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 500 in 1009.0666 ms
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.CountryId.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ 
+
+
+[2023-10-12 23:40:38.577] [Error] RBs-MacBook-Pro () <Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware> An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.Provinces.Country.CountryId.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ 
+
+
+[2023-10-12 23:42:08.820] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-12 23:42:09.350] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-12 23:42:11.285] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-12 23:42:13.464] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 301.5972 ms
+ 
+
+
+[2023-10-12 23:42:13.649] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 135.6248 ms
+ 
+
+
+[2023-10-12 23:42:17.497] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 1035.0660 ms
+ 
+
+
+[2023-10-13 00:00:22.200] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 00:00:22.771] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 00:00:24.638] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 00:00:26.458] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 297.9165 ms
+ 
+
+
+[2023-10-13 00:00:26.663] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 141.8685 ms
+ 
+
+
+[2023-10-13 00:00:39.117] [Error] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Countries" responded 500 in 606.2768 ms
+System.InvalidOperationException: The LINQ expression 'DbSet<Country>()
+    .Any(c => string.Equals(
+        a: c.Name, 
+        b: __country_Name_0, 
+        comparisonType: CurrentCultureIgnoreCase))' could not be translated. Additional information: Translation of the 'string.Equals' overload with a 'StringComparison' parameter is not supported. See https://go.microsoft.com/fwlink/?linkid=2129535 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.<VisitMethodCall>g__CheckTranslated|15_0(ShapedQueryExpression translated, <>c__DisplayClass15_0& )
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Infrastructure.Repositories.CountryRepository.Insert(Country country) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/CountryRepository.cs:line 50
+   at Application.Countries.CommandHandlers.CreateCountryHandler.Handle(CreateCountry request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Countries/CommandHandlers/CreateCountryHandler.cs:line 24
+   at WebAPI.Controllers.CountriesController.CreateCountry(CreateCountryRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/CountriesController.cs:line 30
+   at lambda_method37(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ 
+
+
+[2023-10-13 00:00:39.184] [Error] RBs-MacBook-Pro () <Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware> An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The LINQ expression 'DbSet<Country>()
+    .Any(c => string.Equals(
+        a: c.Name, 
+        b: __country_Name_0, 
+        comparisonType: CurrentCultureIgnoreCase))' could not be translated. Additional information: Translation of the 'string.Equals' overload with a 'StringComparison' parameter is not supported. See https://go.microsoft.com/fwlink/?linkid=2129535 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.<VisitMethodCall>g__CheckTranslated|15_0(ShapedQueryExpression translated, <>c__DisplayClass15_0& )
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Infrastructure.Repositories.CountryRepository.Insert(Country country) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/CountryRepository.cs:line 50
+   at Application.Countries.CommandHandlers.CreateCountryHandler.Handle(CreateCountry request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Countries/CommandHandlers/CreateCountryHandler.cs:line 24
+   at WebAPI.Controllers.CountriesController.CreateCountry(CreateCountryRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/CountriesController.cs:line 30
+   at lambda_method37(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ 
+
+
+[2023-10-13 00:01:35.989] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 00:01:36.582] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 00:01:38.522] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 00:01:40.370] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 296.3328 ms
+ 
+
+
+[2023-10-13 00:01:40.570] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 138.7808 ms
+ 
+
+
+[2023-10-13 00:01:48.792] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Countries" responded 200 in 1228.5899 ms
+ 
+
+
+[2023-10-13 00:23:11.189] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 00:23:11.763] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 00:23:13.546] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 00:23:18.080] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 298.8984 ms
+ 
+
+
+[2023-10-13 00:23:18.307] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 160.9707 ms
+ 
+
+
+[2023-10-13 00:23:38.279] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 1090.6284 ms
+ 
+
+
+[2023-10-13 00:23:58.735] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries/aa2f72aa-303c-45e5-a744-510e9152d83d" responded 200 in 276.9600 ms
+ 
+
+
+[2023-10-13 00:24:36.995] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "PUT" "/Countries" responded 200 in 471.7690 ms
+ 
+
+
+[2023-10-13 00:24:44.345] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries/aa2f72aa-303c-45e5-a744-510e9152d83d" responded 200 in 34.0696 ms
+ 
+
+
+[2023-10-13 00:24:59.263] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "DELETE" "/Countries/d346ed2b-ff50-4281-2597-08dbcb4d4de5" responded 204 in 154.3634 ms
+ 
+
+
+[2023-10-13 00:25:17.471] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 322.5968 ms
+ 
+
+
+[2023-10-13 00:42:27.280] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 00:42:27.844] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 00:42:29.739] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 00:42:34.164] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 315.6785 ms
+ 
+
+
+[2023-10-13 00:42:34.395] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 165.8343 ms
+ 
+
+
+[2023-10-13 00:43:28.302] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Provinces" responded 200 in 802.0990 ms
+ 
+
+
+[2023-10-13 00:45:28.294] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 00:45:28.823] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 00:45:30.709] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 00:45:35.327] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 327.6379 ms
+ 
+
+
+[2023-10-13 00:45:35.546] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 159.1843 ms
+ 
+
+
+[2023-10-13 00:45:45.752] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Provinces" responded 200 in 1015.0580 ms
+ 
+
+
+[2023-10-13 00:46:43.588] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 00:46:44.151] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 00:46:46.001] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 00:46:47.872] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 329.1031 ms
+ 
+
+
+[2023-10-13 00:46:48.106] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 171.7356 ms
+ 
+
+
+[2023-10-13 00:46:51.862] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Provinces" responded 200 in 861.5420 ms
+ 
+
+
+[2023-10-13 00:47:39.623] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Provinces" responded 200 in 689.8643 ms
+ 
+
+
+[2023-10-13 00:47:43.094] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Provinces" responded 200 in 36.5738 ms
+ 
+
+
+[2023-10-13 00:48:52.381] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "PUT" "/Provinces" responded 200 in 284.9402 ms
+ 
+
+
+[2023-10-13 00:48:55.770] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Provinces" responded 200 in 128.1945 ms
+ 
+
+
+[2023-10-13 00:49:02.774] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 184.1791 ms
+ 
+
+
+[2023-10-13 00:49:13.949] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Provinces/fc881d2a-8a98-4da9-b9ad-08dbcb53b5a9" responded 200 in 119.8921 ms
+ 
+
+
+[2023-10-13 00:49:20.714] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "DELETE" "/Provinces/fc881d2a-8a98-4da9-b9ad-08dbcb53b5a9" responded 204 in 305.3503 ms
+ 
+
+
+[2023-10-13 00:49:27.180] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 153.0385 ms
+ 
+
+
+[2023-10-13 00:49:44.562] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Countries" responded 200 in 79.7745 ms
+ 
+
+
+[2023-10-13 00:49:56.445] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Provinces" responded 200 in 36.7932 ms
+ 
+
+
+[2023-10-13 00:50:00.431] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 25.6663 ms
+ 
+
+
+[2023-10-13 00:50:06.109] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "DELETE" "/Countries/e5d0792d-f70f-4e8f-1861-08dbcb540047" responded 204 in 52.0718 ms
+ 
+
+
+[2023-10-13 00:50:09.475] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 158.2176 ms
+ 
+
+
+[2023-10-13 00:50:19.054] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Provinces" responded 200 in 68.8888 ms
+ 
+
+
+[2023-10-13 00:52:59.695] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 00:53:00.271] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 00:53:02.105] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 00:53:03.958] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 302.4512 ms
+ 
+
+
+[2023-10-13 00:53:04.187] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 166.2637 ms
+ 
+
+
+[2023-10-13 00:53:14.877] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.DuplicateValueException: Country with the name [Kazakhstan] already exists.
+   at Infrastructure.Repositories.CountryRepository.Insert(Country country) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/CountryRepository.cs:line 52
+   at Application.Countries.CommandHandlers.CreateCountryHandler.Handle(CreateCountry request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Countries/CommandHandlers/CreateCountryHandler.cs:line 24
+   at WebAPI.Controllers.CountriesController.CreateCountry(CreateCountryRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/CountriesController.cs:line 39
+   at lambda_method37(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 00:53:14.886] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Countries" responded 409 in 835.9299 ms
+ 
+
+
+[2023-10-13 00:53:21.281] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.DuplicateValueException: Country with the name [kazakhstan] already exists.
+   at Infrastructure.Repositories.CountryRepository.Insert(Country country) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/CountryRepository.cs:line 52
+   at Application.Countries.CommandHandlers.CreateCountryHandler.Handle(CreateCountry request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Countries/CommandHandlers/CreateCountryHandler.cs:line 24
+   at WebAPI.Controllers.CountriesController.CreateCountry(CreateCountryRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/CountriesController.cs:line 39
+   at lambda_method37(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 00:53:21.283] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Countries" responded 409 in 154.4708 ms
+ 
+
+
+[2023-10-13 00:53:38.157] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.EntityNotFoundException: Country does not exist.
+   at Infrastructure.Repositories.CountryRepository.GetById(Guid countryId) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/CountryRepository.cs:line 25
+   at Application.Countries.QueryHandlers.GetCountryByIdHandler.Handle(GetCountryById request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Countries/QueryHandlers/GetCountryByIdHandler.cs:line 19
+   at WebAPI.Controllers.CountriesController.GetById(Guid countryId) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/CountriesController.cs:line 32
+   at lambda_method49(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 00:53:38.161] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries/3fa85f64-5717-4562-b3fc-2c963f66afa6" responded 404 in 469.6684 ms
+ 
+
+
+[2023-10-13 01:04:31.217] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 01:04:31.801] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 01:04:33.700] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 01:04:45.899] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 311.7070 ms
+ 
+
+
+[2023-10-13 01:04:46.127] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 165.0954 ms
+ 
+
+
+[2023-10-13 01:04:55.754] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.EntityNotFoundException: Country does not exist.
+   at Infrastructure.Repositories.CountryRepository.GetById(Guid countryId) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/CountryRepository.cs:line 25
+   at Application.Countries.QueryHandlers.GetCountryByIdHandler.Handle(GetCountryById request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Countries/QueryHandlers/GetCountryByIdHandler.cs:line 19
+   at WebAPI.Controllers.CountriesController.GetById(Guid countryId) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/CountriesController.cs:line 32
+   at lambda_method37(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 01:04:55.772] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries/3fa85f64-5717-4562-b3fc-2c963f66afa6" responded 404 in 1126.3306 ms
+ 
+
+
+[2023-10-13 02:14:33.779] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 02:14:50.837] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 02:14:51.422] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 02:14:53.458] [Error] RBs-MacBook-Pro () <Microsoft.EntityFrameworkCore.Database.Command> Failed executing DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Countries] (
+    [CountryId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Countries] PRIMARY KEY ([CountryId])
+);"
+ 
+
+
+[2023-10-13 02:15:28.314] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 02:15:28.883] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 02:15:31.441] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 02:15:46.091] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 399.3915 ms
+ 
+
+
+[2023-10-13 02:15:46.368] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 168.8743 ms
+ 
+
+
+[2023-10-13 02:15:51.525] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 1005.8448 ms
+ 
+
+
+[2023-10-13 02:16:11.534] [Error] RBs-MacBook-Pro () <> Something went wrong: System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at WebAPI.Attributes.AuthorizeAttribute.OnAuthorization(AuthorizationFilterContext context) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Attributes/AuthorizeAttribute.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 02:16:11.542] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries/aa2f72aa-303c-45e5-a744-510e9152d83d" responded 401 in 7813.5685 ms
+ 
+
+
+[2023-10-13 02:18:33.564] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 02:18:34.138] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 02:18:35.978] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 02:18:37.890] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 499.0637 ms
+ 
+
+
+[2023-10-13 02:18:38.189] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 183.6787 ms
+ 
+
+
+[2023-10-13 02:18:50.329] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.UnauthorizedUserException: Exception of type 'Application.Exceptions.UnauthorizedUserException' was thrown.
+   at WebAPI.Attributes.AuthorizeAttribute.OnAuthorization(AuthorizationFilterContext context) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Attributes/AuthorizeAttribute.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 02:18:50.341] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries/3fa85f64-5717-4562-b3fc-2c963f66afa6" responded 401 in 4561.4009 ms
+ 
+
+
+[2023-10-13 02:19:06.552] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.EntityNotFoundException: Province does not exist.
+   at Infrastructure.Repositories.ProvinceRepository.GetById(Guid provinceId) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/ProvinceRepository.cs:line 25
+   at Application.Provinces.QueryHandlers.GetProvinceByIdHandler.Handle(GetProvinceById request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Provinces/QueryHandlers/GetProvinceByIdHandler.cs:line 19
+   at WebAPI.Controllers.ProvincesController.GetById(Guid provinceId) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/ProvincesController.cs:line 32
+   at lambda_method48(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 02:19:06.556] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Provinces/3fa85f64-5717-4562-b3fc-2c963f66afa6" responded 404 in 966.8121 ms
+ 
+
+
+[2023-10-13 03:49:38.002] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 03:49:38.581] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 03:49:40.441] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 03:49:42.618] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 428.7338 ms
+ 
+
+
+[2023-10-13 03:49:42.858] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 178.4617 ms
+ 
+
+
+[2023-10-13 03:50:03.815] [Error] RBs-MacBook-Pro () <> Something went wrong: System.InvalidOperationException: Unable to resolve service for type 'Application.Interfaces.IAuthService' while attempting to activate 'WebAPI.Controllers.UsersController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method43(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 03:50:03.827] [Error] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/login" responded 500 in 216.2761 ms
+ 
+
+
+[2023-10-13 03:51:02.094] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 03:51:02.664] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 03:51:04.537] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 03:51:06.201] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 357.6180 ms
+ 
+
+
+[2023-10-13 03:51:06.439] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 176.0792 ms
+ 
+
+
+[2023-10-13 03:51:11.459] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.EntityNotFoundException: User does not exist.
+   at Infrastructure.Repositories.UserRepository.GetUserByEmail(String email) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/UserRepository.cs:line 99
+   at Application.Users.QueryHandlers.GetUserByEmailHandler.Handle(GetUserByEmail request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Users/QueryHandlers/GetUserByEmailHandler.cs:line 19
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 24
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 39
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 03:51:11.475] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/login" responded 404 in 1301.0783 ms
+ 
+
+
+[2023-10-13 03:51:36.896] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 503.6512 ms
+ 
+
+
+[2023-10-13 03:51:56.112] [Error] RBs-MacBook-Pro () <> Something went wrong: System.ArgumentException: Password must be at least 6 characters long and contain min 1 digit and min 1 letter.
+   at WebAPI.Services.AuthService.Register(CreateUserRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 41
+   at WebAPI.Controllers.UsersController.Register(CreateUserRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 32
+   at lambda_method137(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 03:51:56.115] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/register" responded 400 in 152.2953 ms
+ 
+
+
+[2023-10-13 03:52:04.914] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/register" responded 200 in 837.6482 ms
+ 
+
+
+[2023-10-13 03:52:20.968] [Error] RBs-MacBook-Pro () <Microsoft.EntityFrameworkCore.Query> An exception occurred while iterating over the results of a query for context type '"Infrastructure.DatabaseContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Guid' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method45(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Guid' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method45(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ 
+
+
+[2023-10-13 03:52:21.144] [Error] RBs-MacBook-Pro () <> Something went wrong: System.InvalidCastException: Unable to cast object of type 'System.Guid' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method45(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Infrastructure.Repositories.UserRepository.GetUserByEmail(String email) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/UserRepository.cs:line 99
+   at Application.Users.QueryHandlers.GetUserByEmailHandler.Handle(GetUserByEmail request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Users/QueryHandlers/GetUserByEmailHandler.cs:line 19
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 24
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 39
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 03:52:21.152] [Error] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/login" responded 500 in 771.5723 ms
+ 
+
+
+[2023-10-13 03:52:31.441] [Error] RBs-MacBook-Pro () <Microsoft.EntityFrameworkCore.Query> An exception occurred while iterating over the results of a query for context type '"Infrastructure.DatabaseContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Guid' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method45(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Guid' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method45(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ 
+
+
+[2023-10-13 03:52:31.601] [Error] RBs-MacBook-Pro () <> Something went wrong: System.InvalidCastException: Unable to cast object of type 'System.Guid' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method45(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Infrastructure.Repositories.UserRepository.GetUserByEmail(String email) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/UserRepository.cs:line 99
+   at Application.Users.QueryHandlers.GetUserByEmailHandler.Handle(GetUserByEmail request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Users/QueryHandlers/GetUserByEmailHandler.cs:line 19
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 24
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 39
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 03:52:31.603] [Error] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/login" responded 500 in 217.2350 ms
+ 
+
+
+[2023-10-13 03:53:51.323] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 03:54:08.362] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 03:54:08.926] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 03:54:11.424] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 03:54:33.738] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.EntityNotFoundException: User does not exist.
+   at Infrastructure.Repositories.UserRepository.GetUserByEmail(String email) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/UserRepository.cs:line 99
+   at Application.Users.QueryHandlers.GetUserByEmailHandler.Handle(GetUserByEmail request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Users/QueryHandlers/GetUserByEmailHandler.cs:line 19
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 24
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 39
+   at lambda_method68(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 03:54:33.849] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/login" responded 404 in 1325.8527 ms
+ 
+
+
+[2023-10-13 03:54:39.186] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/register" responded 200 in 1344.3423 ms
+ 
+
+
+[2023-10-13 03:54:41.571] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/login" responded 200 in 287.7441 ms
+ 
+
+
+[2023-10-13 03:57:34.082] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 03:57:34.656] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 03:57:36.621] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 03:57:38.276] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 376.8595 ms
+ 
+
+
+[2023-10-13 03:57:38.517] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 177.6758 ms
+ 
+
+
+[2023-10-13 03:57:53.449] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/login" responded 200 in 1552.6553 ms
+ 
+
+
+[2023-10-13 03:58:17.394] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 458.9310 ms
+ 
+
+
+[2023-10-13 03:58:25.032] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries/aa2f72aa-303c-45e5-a744-510e9152d83d" responded 200 in 469.2581 ms
+ 
+
+
+[2023-10-13 03:58:33.899] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries/aa2f72aa-303c-45e5-a744-510e9152d83d" responded 200 in 28.3647 ms
+ 
+
+
+[2023-10-13 03:58:35.052] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries/aa2f72aa-303c-45e5-a744-510e9152d83d" responded 200 in 27.3949 ms
+ 
+
+
+[2023-10-13 03:59:19.083] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.UnauthorizedUserException: Unauthorized.
+   at WebAPI.Attributes.AuthorizeAttribute.OnAuthorization(AuthorizationFilterContext context) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Attributes/AuthorizeAttribute.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 26
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 21
+ 
+
+
+[2023-10-13 03:59:19.098] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Countries" responded 401 in 4245.2763 ms
+ 
+
+
+[2023-10-13 03:59:30.841] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/login" responded 200 in 262.2048 ms
+ 
+
+
+[2023-10-13 03:59:43.983] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Countries" responded 200 in 412.5226 ms
+ 
+
+
+[2023-10-13 18:01:00.051] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 18:01:00.691] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 18:01:02.555] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 18:01:16.396] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/" responded 307 in 67.8184 ms
+ 
+
+
+[2023-10-13 18:01:16.855] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/" responded 404 in 6.7925 ms
+ 
+
+
+[2023-10-13 18:01:20.679] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/" responded 404 in 1.7987 ms
+ 
+
+
+[2023-10-13 18:02:58.908] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 18:02:59.536] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 18:03:01.686] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 18:03:30.490] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 348.0323 ms
+ 
+
+
+[2023-10-13 18:03:30.614] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 18.5134 ms
+ 
+
+
+[2023-10-13 18:03:30.626] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 8.5506 ms
+ 
+
+
+[2023-10-13 18:03:30.628] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 1.7752 ms
+ 
+
+
+[2023-10-13 18:03:30.934] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 223.7795 ms
+ 
+
+
+[2023-10-13 18:03:30.938] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 0.9409 ms
+ 
+
+
+[2023-10-13 18:03:37.351] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 10.0131 ms
+ 
+
+
+[2023-10-13 18:03:37.416] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 17.8006 ms
+ 
+
+
+[2023-10-13 19:55:50.860] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 19:55:51.471] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 19:55:53.362] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 19:55:54.731] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 449.3964 ms
+ 
+
+
+[2023-10-13 19:55:54.992] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 205.7325 ms
+ 
+
+
+[2023-10-13 19:56:19.229] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/Users/login" responded 200 in 1664.2698 ms
+ 
+
+
+[2023-10-13 19:59:38.757] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 3.8792 ms
+ 
+
+
+[2023-10-13 19:59:39.576] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 200 in 763.9920 ms
+ 
+
+
+[2023-10-13 20:13:17.625] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 1.7803 ms
+ 
+
+
+[2023-10-13 20:13:18.678] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 200 in 880.1910 ms
+ 
+
+
+[2023-10-13 20:20:36.352] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 2.8284 ms
+ 
+
+
+[2023-10-13 20:20:36.620] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 200 in 253.1108 ms
+ 
+
+
+[2023-10-13 20:29:30.016] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 0.4518 ms
+ 
+
+
+[2023-10-13 20:29:30.830] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.EntityNotFoundException: User does not exist.
+   at Infrastructure.Repositories.UserRepository.GetUserByEmail(String email) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/UserRepository.cs:line 95
+   at Application.Users.QueryHandlers.GetUserByEmailHandler.Handle(GetUserByEmail request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Users/QueryHandlers/GetUserByEmailHandler.cs:line 19
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 23
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 34
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 24
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 20
+ 
+
+
+[2023-10-13 20:29:30.842] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 404 in 819.0982 ms
+ 
+
+
+[2023-10-13 20:30:39.236] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 27.4178 ms
+ 
+
+
+[2023-10-13 20:30:39.531] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.EntityNotFoundException: User does not exist.
+   at Infrastructure.Repositories.UserRepository.GetUserByEmail(String email) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/UserRepository.cs:line 95
+   at Application.Users.QueryHandlers.GetUserByEmailHandler.Handle(GetUserByEmail request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Users/QueryHandlers/GetUserByEmailHandler.cs:line 19
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 23
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 34
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 24
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 20
+ 
+
+
+[2023-10-13 20:30:39.533] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 404 in 215.0404 ms
+ 
+
+
+[2023-10-13 20:32:54.740] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 1.1825 ms
+ 
+
+
+[2023-10-13 20:32:55.250] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.UnauthorizedUserException: Username or password is incorrect
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 27
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 34
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 24
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 20
+ 
+
+
+[2023-10-13 20:32:55.252] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 401 in 397.6841 ms
+ 
+
+
+[2023-10-13 20:33:30.809] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 29.2398 ms
+ 
+
+
+[2023-10-13 20:33:31.224] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.UnauthorizedUserException: Username or password is incorrect
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 27
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 34
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 24
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 20
+ 
+
+
+[2023-10-13 20:33:31.225] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 401 in 356.9787 ms
+ 
+
+
+[2023-10-13 20:33:50.829] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 0.4104 ms
+ 
+
+
+[2023-10-13 20:33:51.189] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.UnauthorizedUserException: Username or password is incorrect
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 27
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 34
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 24
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 20
+ 
+
+
+[2023-10-13 20:33:51.190] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 401 in 354.2986 ms
+ 
+
+
+[2023-10-13 20:34:15.519] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 70.7527 ms
+ 
+
+
+[2023-10-13 20:34:15.755] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.EntityNotFoundException: User does not exist.
+   at Infrastructure.Repositories.UserRepository.GetUserByEmail(String email) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Infrastructure/Repositories/UserRepository.cs:line 95
+   at Application.Users.QueryHandlers.GetUserByEmailHandler.Handle(GetUserByEmail request, CancellationToken cancellationToken) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/Application/Users/QueryHandlers/GetUserByEmailHandler.cs:line 19
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 23
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 34
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 24
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 20
+ 
+
+
+[2023-10-13 20:34:15.756] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 404 in 169.4935 ms
+ 
+
+
+[2023-10-13 20:34:29.697] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 0.5012 ms
+ 
+
+
+[2023-10-13 20:34:30.059] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.UnauthorizedUserException: Username or password is incorrect
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 27
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 34
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 24
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 20
+ 
+
+
+[2023-10-13 20:34:30.061] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 401 in 357.7098 ms
+ 
+
+
+[2023-10-13 20:36:42.090] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 2.7508 ms
+ 
+
+
+[2023-10-13 20:36:42.468] [Error] RBs-MacBook-Pro () <> Something went wrong: Application.Exceptions.UnauthorizedUserException: Username or password is incorrect
+   at WebAPI.Services.AuthService.Authenticate(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Services/AuthService.cs:line 27
+   at WebAPI.Controllers.UsersController.Login(AuthRequest request) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Controllers/UsersController.cs:line 34
+   at lambda_method39(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.JwtMiddleware.Invoke(HttpContext context, IMediator mediator, IJwtService jwtService) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/JwtMiddleware.cs:line 24
+   at WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/rustembaltiyev/Documents/GitHub/PromomashTestTask/PromomashTestTask/WebAPI/Middleware/ExceptionMiddleware.cs:line 20
+ 
+
+
+[2023-10-13 20:36:42.469] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 401 in 370.2490 ms
+ 
+
+
+[2023-10-13 20:42:49.152] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 0.6254 ms
+ 
+
+
+[2023-10-13 20:42:50.168] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 200 in 875.2363 ms
+ 
+
+
+[2023-10-13 22:04:17.597] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 569.9245 ms
+ 
+
+
+[2023-10-13 22:04:43.581] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 141.2560 ms
+ 
+
+
+[2023-10-13 22:04:45.753] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 119.9059 ms
+ 
+
+
+[2023-10-13 22:04:53.607] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 116.8244 ms
+ 
+
+
+[2023-10-13 22:05:02.660] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 39.7331 ms
+ 
+
+
+[2023-10-13 22:05:46.816] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 527.1671 ms
+ 
+
+
+[2023-10-13 22:05:59.581] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 7.6740 ms
+ 
+
+
+[2023-10-13 22:06:01.755] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 197.2555 ms
+ 
+
+
+[2023-10-13 22:06:03.235] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 27.6368 ms
+ 
+
+
+[2023-10-13 22:06:25.618] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 424.9260 ms
+ 
+
+
+[2023-10-13 22:06:31.475] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 213.6825 ms
+ 
+
+
+[2023-10-13 22:07:54.876] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 447.0212 ms
+ 
+
+
+[2023-10-13 22:08:49.547] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 8.2897 ms
+ 
+
+
+[2023-10-13 22:09:36.167] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 400.0417 ms
+ 
+
+
+[2023-10-13 22:10:24.355] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 9.1359 ms
+ 
+
+
+[2023-10-13 22:10:36.507] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 9.5077 ms
+ 
+
+
+[2023-10-13 22:11:39.467] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 195.6421 ms
+ 
+
+
+[2023-10-13 22:15:35.526] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 490.4301 ms
+ 
+
+
+[2023-10-13 22:17:45.724] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 399.2592 ms
+ 
+
+
+[2023-10-13 22:18:23.317] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 312.0647 ms
+ 
+
+
+[2023-10-13 22:18:42.329] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 77.5959 ms
+ 
+
+
+[2023-10-13 22:19:26.517] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 186.2659 ms
+ 
+
+
+[2023-10-13 22:20:24.088] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 43.7828 ms
+ 
+
+
+[2023-10-13 22:21:28.818] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 39.8260 ms
+ 
+
+
+[2023-10-13 22:23:39.087] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 544.0908 ms
+ 
+
+
+[2023-10-13 22:23:46.937] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 8.6084 ms
+ 
+
+
+[2023-10-13 22:23:53.244] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 8.8309 ms
+ 
+
+
+[2023-10-13 22:25:38.769] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 325.0388 ms
+ 
+
+
+[2023-10-13 22:26:59.443] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 379.7798 ms
+ 
+
+
+[2023-10-13 22:27:05.898] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 19.2606 ms
+ 
+
+
+[2023-10-13 22:27:16.816] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 11.5732 ms
+ 
+
+
+[2023-10-13 22:29:05.234] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 60.5558 ms
+ 
+
+
+[2023-10-13 22:29:43.453] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 507.6628 ms
+ 
+
+
+[2023-10-13 22:36:48.298] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 433.7334 ms
+ 
+
+
+[2023-10-13 22:37:15.425] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 472.2351 ms
+ 
+
+
+[2023-10-13 22:37:33.988] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 8.0673 ms
+ 
+
+
+[2023-10-13 22:38:52.952] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 334.6952 ms
+ 
+
+
+[2023-10-13 22:39:32.441] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 35.1269 ms
+ 
+
+
+[2023-10-13 22:39:34.458] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 25.0534 ms
+ 
+
+
+[2023-10-13 22:40:14.765] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 61.8039 ms
+ 
+
+
+[2023-10-13 22:42:20.135] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 18.6778 ms
+ 
+
+
+[2023-10-13 22:45:41.514] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 219.4203 ms
+ 
+
+
+[2023-10-13 22:46:23.804] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 56.0213 ms
+ 
+
+
+[2023-10-13 22:47:08.225] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/register" responded 204 in 29.4686 ms
+ 
+
+
+[2023-10-13 22:47:09.023] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/register" responded 200 in 712.1674 ms
+ 
+
+
+[2023-10-13 22:47:25.802] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/login" responded 204 in 0.5602 ms
+ 
+
+
+[2023-10-13 22:47:26.132] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/login" responded 200 in 293.6234 ms
+ 
+
+
+[2023-10-13 22:51:18.137] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 22:51:18.745] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 22:51:20.663] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 22:51:22.358] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 345.9301 ms
+ 
+
+
+[2023-10-13 22:51:22.592] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 179.9456 ms
+ 
+
+
+[2023-10-13 22:51:39.381] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Users" responded 200 in 1224.5861 ms
+ 
+
+
+[2023-10-13 23:01:06.535] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users" responded 204 in 11.9943 ms
+ 
+
+
+[2023-10-13 23:01:07.181] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/users" responded 200 in 565.2077 ms
+ 
+
+
+[2023-10-13 23:01:21.333] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/countries" responded 200 in 246.3582 ms
+ 
+
+
+[2023-10-13 23:01:52.688] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users/register" responded 204 in 2.3631 ms
+ 
+
+
+[2023-10-13 23:01:53.531] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "POST" "/users/register" responded 200 in 793.2523 ms
+ 
+
+
+[2023-10-13 23:01:53.545] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "OPTIONS" "/users" responded 204 in 0.1551 ms
+ 
+
+
+[2023-10-13 23:01:53.646] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/users" responded 200 in 24.9163 ms
+ 
+
+
+[2023-10-13 23:03:30.809] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 23:05:54.596] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 23:05:55.160] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 23:05:57.762] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 23:06:00.982] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger" responded 301 in 96.8881 ms
+ 
+
+
+[2023-10-13 23:06:01.319] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 288.2862 ms
+ 
+
+
+[2023-10-13 23:06:01.566] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 180.6281 ms
+ 
+
+
+[2023-10-13 23:06:07.308] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/Countries" responded 200 in 1057.9963 ms
+ 
+
+
+[2023-10-13 23:11:32.340] [Information] RBs-MacBook-Pro () <> Starting up...
+ 
+
+
+[2023-10-13 23:11:32.790] [Information] RBs-MacBook-Pro () <> Migrating database...
+ 
+
+
+[2023-10-13 23:11:34.498] [Information] RBs-MacBook-Pro () <> Finished migrating database.
+ 
+
+
+[2023-10-13 23:11:35.928] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/index.html" responded 200 in 393.6057 ms
+ 
+
+
+[2023-10-13 23:11:36.162] [Information] RBs-MacBook-Pro () <Serilog.AspNetCore.RequestLoggingMiddleware> HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 179.0102 ms
+ 
+
+

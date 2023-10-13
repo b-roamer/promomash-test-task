@@ -1,0 +1,19 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="https://f.hubspotusercontent10.net/hub/2479310/hubfs/Logo%20only.png?width=108&height=108"
+  />
+  <span>Promomash Test Task</span>
+  <div class="spacer"></div>
+
+  <button *ngIf="user" (click)="logout()" mat-flat-button color="primary">Logout</button>
+
+  <button *ngIf="!user" [routerLink]="'/register'" mat-flat-button color="primary" class="mr-4">Register</button>
+  <button *ngIf="!user" [routerLink]="'/login'" mat-flat-button color="primary">Login</button>
+</div>
+
+<div class="app-container">
+  <router-outlet></router-outlet>
+</div>
